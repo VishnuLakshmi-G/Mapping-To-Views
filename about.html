@@ -1,0 +1,88 @@
+<!-- templates/about.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Django</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: lite pink;
+            color: #2c3e50;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5em;
+            color: #2980b9;
+            animation: slideIn 1s ease-in-out;
+        }
+        h2 {
+            color: #e74c3c;
+            margin: 10px 0;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        p {
+            font-size: 1.2em;
+            margin: 20px 0;
+            line-height: 1.5;
+            animation: fadeIn 2s ease-in-out;
+        }
+        ul {
+            text-align: left;
+            display: inline-block;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ecf0f1;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            animation: zoomIn 1.5s ease-in-out;
+        }
+        li {
+            margin: 10px 0;
+            font-size: 1.1em;
+        }
+        @keyframes slideIn {
+            from {
+                transform: translateX(-100px);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        @keyframes zoomIn {
+            from {
+                transform: scale(0.5);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>About Django</h1>
+   
+    
+    <p>Django is a high-level Python web framework that simplifies the creation of complex, secure, and scalable web applications. Built on the principle of "Don't Repeat Yourself" (DRY), it encourages reusability of code and promotes clean, efficient design patterns.</p>
+
+    <ul>
+        <li><strong>Model:</strong> The data layer that manages the data structure, typically interacting with the database to retrieve and store information.</li>
+        <li><strong>View:</strong> Handles the logic behind user requests, processes the data, and returns the relevant content to the user, usually through a template.</li>
+        <li><strong>Template:</strong> Defines the structure and layout of the page that is presented to the user, with embedded logic to dynamically display data.</li>
+    </ul>
+</body>
+</html>

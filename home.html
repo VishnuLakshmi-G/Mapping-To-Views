@@ -1,0 +1,141 @@
+<!-- templates/home.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color:lite pink;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 3em;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            animation: slideDown 1s ease-in-out;
+        }
+        p {
+            font-size: 1.2em;
+            margin: 15px 0;
+            line-height: 1.6;
+            animation: fadeIn 1s ease-in-out;
+        }
+        img {
+            width: 150px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+            animation: zoomIn 1.5s ease-in-out;
+        }
+        img:hover {
+            transform: scale(1.1);
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+        .points {
+            text-align: left;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            animation: bounceIn 1s ease-in-out;
+        }
+        ul {
+            margin: 20px 0;
+            padding: 0;
+            list-style-type: disc;
+            animation: fadeIn 1s ease-in-out;
+        }
+        li {
+            padding: 10px 0;
+        }
+        footer {
+            margin-top: 50px;
+            font-size: 1em;
+            color: #7f8c8d;
+        }
+        @keyframes slideDown {
+            from {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        @keyframes zoomIn {
+            from {
+                transform: scale(0.7);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+        @keyframes bounceIn {
+            0% {
+                transform: scale(0.5);
+                opacity: 0;
+            }
+            60% {
+                transform: scale(1.05);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Django Home Page</h1>
+       
+        <p>Django is a high-level Python web framework that enables rapid development of secure and maintainable websites. It's an open-source framework that encourages a clean, pragmatic design and emphasizes the reusability of components, following the DRY (Don't Repeat Yourself) principle.</p>
+        
+      
+
+        <p>Django supports a "batteries-included" philosophy, meaning many common tasks, such as authentication, URL routing, and templating, are included by default, allowing developers to focus on the unique aspects of their project rather than reinventing the wheel.</p>
+
+        <p>Here's an image of the Django logo:</p>
+        <img src="https://cdn.icon-icons.com/icons2/2415/PNG/512/django_line_logo_icon_146560.png" alt="Django Logo">
+
+        <h2>Features that Make Django Stand Out</h2>
+        <ul>
+            <li>💼 **Admin Interface**: Comes with a fully customizable, production-ready admin interface for managing your models and data.</li>
+            <li>🌱 **ORM**: A powerful Object-Relational Mapper that abstracts database queries, allowing developers to work with databases seamlessly.</li>
+            <li>📧 **Mailing System**: Django makes it easy to send emails and handle email-related tasks (password resets, notifications, etc.).</li>
+            <li>⚙️ **Middleware**: A powerful and flexible system for processing requests and responses globally.</li>
+            <li>📁 **Templating Engine**: A fast, flexible templating system that supports conditional rendering and loops, making it easy to build dynamic pages.</li>
+        </ul>
+
+        <p>With Django, you're ready to handle even the most complex web applications. It's been used to build highly scalable applications, including Instagram, Pinterest, and Disqus.</p>
+
+        <p>Here is another logo image of Django:</p>
+        
+    </div>
+
+   
+</body>
+</html>
